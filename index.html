@@ -10,15 +10,28 @@
     <body>
         <section id="hero">
             
-            <div>
-                <h1>
+            <div class="hero-col" id="hero-col-left">
+                <h1 id="hero-heading">
                     Aditya Priyam
                 </h1>
             </div>
-            <div id="hero-profile-image">
-                <img  src="https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-9/35771087_527099371026429_7274477437419782144_n.jpg?_nc_cat=104&_nc_oc=AQlr8gugArL9tF3g8FO_RTLdwoWEMqVq48rHyZJu-AOZ5WqLeRrlfW2j2W-mJPO4dTQon5fjolTyowGXb-KgNJRH&_nc_ht=scontent.fbho1-2.fna&oh=87ea9a9a72347443102dd1f529ceb50e&oe=5E28F4C2">
+            <div class="hero-col" id="hero-col-right">
+                <img class="hero-image" src="https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-9/35771087_527099371026429_7274477437419782144_n.jpg?_nc_cat=104&_nc_oc=AQlr8gugArL9tF3g8FO_RTLdwoWEMqVq48rHyZJu-AOZ5WqLeRrlfW2j2W-mJPO4dTQon5fjolTyowGXb-KgNJRH&_nc_ht=scontent.fbho1-2.fna&oh=87ea9a9a72347443102dd1f529ceb50e&oe=5E28F4C2">
             </div>
         </section>
-
+        <script type="text/javascript"></script>
+        <script type="text/javascript"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script> 
+        <script src="js/tilt.jquery.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.hero-image').tilt({
+                    maxTilt : 10
+                });
+            });
+        </script>
     </body>
 </html>
