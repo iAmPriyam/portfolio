@@ -14,9 +14,28 @@ body{
     color: white;
 }
 
-#hero-profile-image{
+.col{
+}
+
+#hero-heading{
+    font-size: 5em;
+}
+
+
+#hero-col-left{
+    width: 50%;
+    float: left;
+}
+
+#hero-col-right{
+    width:50%;
+    float: left;
+    text-align: right;
+}
+
+.hero-profile-image{
     display: inline;
 }
-#hero-profile-image>img{
+.hero-image{
     max-height: 400px;
 }
