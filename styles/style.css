@@ -1,0 +1,22 @@
+*{
+    margin:  0;
+}
+section{
+    margin: 160px 180px;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(10,20,46,1),rgba(21,35,71,1));
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Space Mono', monospace;
+    font-style: regular;
+    color: white;
+}
+
+#hero-profile-image{
+    display: inline;
+}
+#hero-profile-image>img{
+    max-height: 400px;
+}
