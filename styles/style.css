@@ -519,7 +519,7 @@ a{
     margin: 140px 80px;
     grid-gap: 20px;
 }
-
+}
 
 @media screen and (max-width: 1200px){
 
@@ -534,6 +534,14 @@ a{
     /* background-size: cover; */
     background-repeat: no-repeat;  
     margin: 20px 0;
+}
+
+
+.skill-rating-val{
+    background: linear-gradient( to bottom,rgb(255,181,62),  rgb(255,9,164));
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-repeat: no-repeat; 
 }
 
 
@@ -634,6 +642,12 @@ a{
         width: 100%;
         padding: 0;
     }
+
+    .edu-grid-item,.skill-rating-val{
+        background-attachment: fixed;
+        /* background-size: cover; */
+        background-repeat: no-repeat; 
+    }
 }
 
 @media screen and (max-width:600px){
@@ -656,6 +670,12 @@ a{
     }
     .exp-item-desc{
         font-size: 1rem;
+    }
+
+    .edu-grid-item,.skill-rating-val{
+        background-attachment: fixed;
+        /* background-size: cover; */
+        background-repeat: no-repeat; 
     }
 
 }
@@ -708,5 +728,11 @@ a{
 .hero-grid-item>div>i{
     margin: 16% 0;
     font-size: 2.4rem;
+}
+
+.edu-grid-item,.skill-rating-val{
+    background-attachment: fixed;
+    /* background-size: cover; */
+    background-repeat: no-repeat; 
 }
 }
