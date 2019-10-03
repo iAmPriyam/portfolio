@@ -13,7 +13,9 @@ section{
     /* overflow-x: hidden; */
 }
 
-
+.mob-image,.mob-img-elem{
+    display: none;
+}
 body{
     background-image: linear-gradient(to bottom,rgba(10,20,46,1),rgba(21,35,71,1),rgba(21,35,71,1),rgba(21,35,71,1));
     background-size: cover;
@@ -46,7 +48,6 @@ main{
 .navigation{
     text-align: right;
     width: 100%;
-    z-index:10 ;
 }
 .nav-item{
     display: inline-block;
@@ -514,6 +515,7 @@ a{
 
 .hero-grid{
     margin: 140px 80px;
+    grid-gap: 20px;
 }
 
 
@@ -541,5 +543,168 @@ a{
     .project-grid{
         grid-template-columns: 50% 50%; 
     }
+
+    .hero-grid{
+        grid-template-columns: 50% 50%; 
+    }
+
+
+    #about>p,.text{
+        width: 90%;
+    }
     
+}
+
+
+@media screen and (max-width:800px){
+
+    .mob-image,.mob-img-elem,.mob-img-wrapper{
+        display:inline-block;
+    }
+
+    .hero-image,#hero-col-right,.hero-image-wrapper{
+        display: none;
+        width: 0%;
+    }
+    #hero-col-left{
+        width: 100%;
+    }
+    .nav{
+        text-align: center;
+        float: none;
+    }
+
+    .mob-img{
+        width: 100%;
+    }
+    .mob-img-elem{
+        height: 350px;
+        border-radius: 100%;
+    }
+    
+    
+    .mob-img-wrapper{
+        position: relative;
+        padding: 0.3rem;
+        background: linear-gradient( 30deg, rgba(252,0,127,0), rgba(252,0,127,1), rgba(251,249,45,1));
+        height:  350px;
+        width: 350px;
+        border-radius: 100%;
+        box-shadow: 0px 10PX 20px rgb(0,0,0,0.2);
+    }
+
+    .nav-list{
+        text-align: center;
+        margin: 20px 0;
+        padding:0;
+    }
+    .nav-item{
+        display: block;
+        margin: 5px 0px;
+        font-size: 2rem;
+    }
+
+    #hero{
+        height : 900px;
+    }
+
+
+    .project-grid{
+        grid-template-columns: 100%; 
+    }
+
+    .exp-header{
+      grid-template-columns: 100%;
+      height: 150px;
+      /* margin-top: 5px;  */
+    }
+    .exp-header-left{
+        padding-top: 10px;
+    }
+
+    .exp-header-left>img{
+        margin-top: 22px;
+    }
+
+    .exp-header-right{
+        margin: 0px;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:600px){
+    section,.hero-grid{
+        margin: 0 40px;
+    }
+    .skill-wrapper{
+       grid-template-columns: 100%; 
+    }
+    .exp-body{
+        padding: 40px;
+    }
+
+    .exp-body>h1{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .exp-item-overview{
+        font-size: 0.8rem;
+    }
+    .exp-item-desc{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:400px){
+
+    .nav-item{
+        font-size: 1.2rem;
+    }
+    .mob-img-elem,.mob-img-wrapper{
+        height:  200px;
+        width: 200px;
+    }
+
+    #hero-heading{
+        text-align: center;
+        font-size: 3.4rem;
+    }
+
+    .hero-description>li{
+        font-size: 1rem;
+        text-align: center;
+    }
+    #hero-col-left>p{
+        font-size:1.8rem;
+        text-align: justify;
+    }
+    .hero-wrapper{
+        height: 380px;
+    }
+    #hero{
+        height: 600px;
+    }
+
+    .exp-header-left{
+        padding: 10px;
+        grid-template-columns: 30% 70%;
+    }
+
+
+.hero-grid-item{
+    height: 100px;
+    width : 120px;
+}
+.hero-grid-item>div{
+    margin-left: 22px;
+    font-size: 0.7rem;
+}
+
+.hero-grid-item>div>i{
+    margin: 16% 0;
+    font-size: 2.4rem;
+}
 }
