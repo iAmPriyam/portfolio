@@ -26,9 +26,10 @@ body{
 }
 
 main{
+    /* margin:0; */
     background: url("../images/bg-left-6cede81e395aa4ed5f64010cba3cd32b0cd8b29934de8a75b93c40dc9941fdd5.png"),url("../images/bg-right-e498161aecb6d9b04889329f11ce0b4e09e562ead23fb12d05b7508d1dc0c85c.png");
     background-repeat: no-repeat;
-    background-position: 0 0,
+    background-position: top 0 left 0, top 320px right 0px;
 }
 
 #bg-top-left{
@@ -432,6 +433,7 @@ main{
      background-image: url("../images/bg-left2-5c6239cfdeee85bd4e1299b1568bfe266cf8f3db605ccfa26f2e3d9e7a31fc2d.png"),url("../images/bg-right2-c33fdd65e6a4c81287cb0f463cd75e24b6bf861a40c16207813f344e9b7def98.png");
      background-origin: content-box;
      background-repeat:no-repeat;
+     background-position: bottom 0 left 0, top 100px right 0; 
      overflow: hidden;
      /* background-color: pink; */
  }
