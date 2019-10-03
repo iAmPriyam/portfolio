@@ -112,8 +112,9 @@ body{
 }
 
 .hero-grid{
+    margin: 200px 0;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 250px 250px 250px;
     padding-top: 40px;
 }
 
@@ -174,6 +175,7 @@ body{
 }
 
 .skill-wrapper{
+    background: url('../images/bg-right-e498161aecb6d9b04889329f11ce0b4e09e562ead23fb12d05b7508d1dc0c85c.png');
     display: grid;
     grid-template-columns: 20% 50%;
 }
@@ -390,3 +392,30 @@ body{
     transform: scale(1.1);
     transition: 0.2s ease-in-out; 
  }
+
+ footer{
+     background-origin: content-box;
+     background-repeat:no-repeat;
+     overflow: hidden;
+     /* background-color: pink; */
+ }
+ .footer-wall-left{
+     position: absolute;
+     left:0;
+     top: 8000px;
+     z-index: -1;
+ }
+
+ .footer-wall-right{
+    position: absolute;
+    right:0;
+    top: 7800px;
+    z-index: -1;
+}
+
+.skill-bg{
+    position: absolute;
+    left:180px;
+    top: 1500px;
+    z-index: -1;
+}
