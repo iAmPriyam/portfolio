@@ -4,44 +4,66 @@
         <title>
             Aditya Priyam
         </title>
-        <link rel="stylesheet" type="text/css" href="./styles/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="navigation">
-            <ul class="nav-list">
-                <a href="#hero">
-                     <li class="nav-item">Home</li>
-                </a>
-                <a href="#about">
-                        <li class="nav-item">About</li>
-                   </a>
-                   <a href="#education">
-                        <li class="nav-item">Education</li>
-                   </a>
-                   <a href="#experience">
-                        <li class="nav-item">Experience</li>
-                   </a>
-                   <a href="#project">
-                        <li class="nav-item">Projects</li>
-                   </a>
-                   <a href="#achievement">
-                        <li class="nav-item">Achievements</li>
-                   </a> 
-            </ul>
-        </div>
+        
+        <main>
+            <section class="nav">
+                    
+                <div class="navigation">
+                        <ul class="nav-list">
+                            <a href="#hero">
+                                 <li class="nav-item">Home</li>
+                            </a>
+                            <a href="#about">
+                                    <li class="nav-item">About</li>
+                               </a>
+                               <a href="#education">
+                                    <li class="nav-item">Education</li>
+                               </a>
+                               <a href="#experience">
+                                    <li class="nav-item">Experience</li>
+                               </a>
+                               <a href="#project">
+                                    <li class="nav-item">Projects</li>
+                               </a>
+                               <a href="#achievement">
+                                    <li class="nav-item">Achievements</li>
+                               </a> 
+                        </ul>
+                    </div>
+                    <div class="mob-img"  >
+                            <div class="mob-img-wrapper">
+                                <img class="mob-img-elem" src="https://scontent.fbho1-2.fna.fbcdn.net/v/t1.0-9/35771087_527099371026429_7274477437419782144_n.jpg?_nc_cat=104&_nc_oc=AQlr8gugArL9tF3g8FO_RTLdwoWEMqVq48rHyZJu-AOZ5WqLeRrlfW2j2W-mJPO4dTQon5fjolTyowGXb-KgNJRH&_nc_ht=scontent.fbho1-2.fna&oh=87ea9a9a72347443102dd1f529ceb50e&oe=5E28F4C2">   
+                            </div>
+                           </div>
+                </section>
         <section id="hero">
-            <img class="background-left" id="bg-top-left" src="images/bg-left-6cede81e395aa4ed5f64010cba3cd32b0cd8b29934de8a75b93c40dc9941fdd5.png">
-            <img class="background-right" id="bg-top-right" src="images/bg-right-e498161aecb6d9b04889329f11ce0b4e09e562ead23fb12d05b7508d1dc0c85c.png">            
+            <!-- <img class="background-left" id="bg-top-left" src="images/bg-left-6cede81e395aa4ed5f64010cba3cd32b0cd8b29934de8a75b93c40dc9941fdd5.png">
+            <img class="background-right" id="bg-top-right" src="images/bg-right-e498161aecb6d9b04889329f11ce0b4e09e562ead23fb12d05b7508d1dc0c85c.png">             -->
             <div class="hero-wrapper">  
             <div class="hero-col" id="hero-col-left">
                 <h1 id="hero-heading">
                     Aditya Priyam
                 </h1>
-                <h2 class="hero-description">
-                    Developer | Programmer | Designer
-                </h2>
+                <!-- <h2 > -->
+                    <ul class="hero-description">
+                        <li>
+                            Developer
+                        </li>
+                        <li>
+                            Programmer
+                        </li>
+                        <li>
+                            Designer
+                        </li>
+                    </ul>
+                    <!-- Developer | Programmer | Designer -->
+                <!-- </h2> -->
                 <p>
                     If it doesn't <span class="highlight">challenge</span> you, it won't <span class="highlight">change</span> you.
                 </p>
@@ -61,6 +83,7 @@
 
         
         <section id="about">
+                <!-- <img class="skill-bg" src=""> -->
             <h1 class="title" id="about-title">
                 About
             </h1>
@@ -75,7 +98,7 @@
                 </h1>
             
                 <div class="skill-wrapper">
-                    <img class="skill-bg" src="images/bg-map-6ed3e6c4b0c66b7bc311899f6257b04ccedb52dc69e65abdafecf2a8ec472fa5.png">
+                    
                         <div class="skill-title">
                                 C
                             </div>
@@ -290,6 +313,7 @@
             </div>
             </section>
         <section id="education">
+            <div class="education-wrapper">
             <h1 class="title" id="education-title">
                 Education
             </h1>
@@ -342,6 +366,7 @@
             </div>
             <div class="division">
                     <hr class="div-line"> <hr class="div-line-short">
+            </div>
             </div>
         </section>
 
@@ -612,10 +637,10 @@
                     <div class="project-card">
                             <div class="project-card-header">
                                 <div class="project-card-title">
-                                    Name
+                                    Protegrity Part Versioning
                                 </div>
                                 <div class="project-card-tag">
-                                    tag
+                                    Java(Spring), Neo4j
                                 </div>
                             </div>
                             <div class="project-card-desc">
@@ -627,10 +652,10 @@
                         </div>  <div class="project-card">
                                 <div class="project-card-header">
                                     <div class="project-card-title">
-                                        Name
+                                        Gender based emotion detection
                                     </div>
                                     <div class="project-card-tag">
-                                        tag
+                                        Python
                                     </div>
                                 </div>
                                 <div class="project-card-desc">
@@ -643,10 +668,10 @@
                              <div class="project-card">
                                     <div class="project-card-header">
                                         <div class="project-card-title">
-                                            Name
+                                            Web based compiler
                                         </div>
                                         <div class="project-card-tag">
-                                            tag
+                                            Javascript
                                         </div>
                                     </div>
                                     <div class="project-card-desc">
@@ -660,10 +685,10 @@
                     <div class="project-card">
                             <div class="project-card-header">
                                 <div class="project-card-title">
-                                    Name
+                                    Dequinox'18 Official Site
                                 </div>
                                 <div class="project-card-tag">
-                                    tag
+                                    Web Dev
                                 </div>
                             </div>
                             <div class="project-card-desc">
@@ -673,7 +698,24 @@
                                 View
                             </div>
                         </div> 
-            </div>
+            
+                        <div class="project-card">
+                                <div class="project-card-header">
+                                    <div class="project-card-title">
+                                        JUET MUN'18 Official website
+                                    </div>
+                                    <div class="project-card-tag">
+                                        Web Dev
+                                    </div>
+                                </div>
+                                <div class="project-card-desc">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, odit? Beatae qui est consequatur corporis excepturi itaque deleniti enim numquam iure nam, debitis provident dolorem quia ad quaerat? Corporis deleniti repellat exercitationem qui perferendis accusantium odit hic, assumenda minima voluptatum.
+                                </div>
+                                <div class="project-button">
+                                    View
+                                </div>
+                            </div>
+                    </div>
             <div class="division">
                     <hr class="div-line"> <hr class="div-line-short">
             </div>
@@ -688,25 +730,24 @@
                         <div class="project-card">
                                 <div class="project-card-header">
                                     <div class="project-card-title">
-                                        Name
+                                        Stanford Online Learning <br> Statement of Accomplishment
                                     </div>
                                     <div class="project-card-tag">
-                                        tag
+                                        XML
                                     </div>
                                 </div>
                                 <div class="project-card-desc">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, odit? Beatae qui est consequatur corporis excepturi itaque deleniti enim numquam iure nam, debitis provident dolorem quia ad quaerat? Corporis deleniti repellat exercitationem qui perferendis accusantium odit hic, assumenda minima voluptatum.
-                                </div>
+                                    Lorem ipsum dolor sit, </div>
                                  <div class="project-button">
                                     View
                                 </div>
                             </div>  <div class="project-card">
                                     <div class="project-card-header">
                                         <div class="project-card-title">
-                                            Name
+                                            Stanford Online Learning <br> Statement of Accomplishment
                                         </div>
                                         <div class="project-card-tag">
-                                            tag
+                                            JSON
                                         </div>
                                     </div>
                                     <div class="project-card-desc">
@@ -719,10 +760,10 @@
                                  <div class="project-card">
                                         <div class="project-card-header">
                                             <div class="project-card-title">
-                                                Name
+                                                Simplilearn <br> Certificate of Achievement
                                             </div>
                                             <div class="project-card-tag">
-                                                tag
+                                                Apache Kafka
                                             </div>
                                         </div>
                                         <div class="project-card-desc">
@@ -736,10 +777,10 @@
                         <div class="project-card">
                                 <div class="project-card-header">
                                     <div class="project-card-title">
-                                        Name
+                                        Simplilearn <br> Certificate of Achievement
                                     </div>
                                     <div class="project-card-tag">
-                                        tag
+                                        Java for Hadoop
                                     </div>
                                 </div>
                                 <div class="project-card-desc">
@@ -754,10 +795,11 @@
                         <hr class="div-line"> <hr class="div-line-short">
                 </div>
             </section>
+        </main>
 
             <footer>
-                <img class="footer-wall-left" src="images/bg-left2-5c6239cfdeee85bd4e1299b1568bfe266cf8f3db605ccfa26f2e3d9e7a31fc2d.png">
-                <img class="footer-wall-right" src="images/bg-right2-c33fdd65e6a4c81287cb0f463cd75e24b6bf861a40c16207813f344e9b7def98.png">
+                <!-- <img class="footer-wall-left" src="images/bg-left2-5c6239cfdeee85bd4e1299b1568bfe266cf8f3db605ccfa26f2e3d9e7a31fc2d.png">
+                <img class="footer-wall-right" src="images/bg-right2-c33fdd65e6a4c81287cb0f463cd75e24b6bf861a40c16207813f344e9b7def98.png"> -->
                     <div class="hero-grid">
                         <a href="https://github.com/iAmPriyam" target="_blank">
                             
