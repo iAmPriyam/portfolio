@@ -636,6 +636,21 @@ a{
         margin-top: 22px;
     }
 
+    .exp-body{
+        padding: 40px;
+    }
+
+    .exp-body>h1{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    .exp-item-overview{
+        font-size: 0.8rem;
+    }
+    .exp-item-desc{
+        font-size: 1rem;
+    }
+
     .exp-header-right{
         margin: 0px;
         text-align: center;
@@ -656,20 +671,6 @@ a{
     }
     .skill-wrapper{
        grid-template-columns: 100%; 
-    }
-    .exp-body{
-        padding: 40px;
-    }
-
-    .exp-body>h1{
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-    .exp-item-overview{
-        font-size: 0.8rem;
-    }
-    .exp-item-desc{
-        font-size: 1rem;
     }
 
     .edu-grid-item,.skill-rating-val{
