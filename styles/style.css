@@ -16,6 +16,7 @@ body{
     margin : 0 180px;
 }
 
+
 #bg-top-left{
     position: absolute;
     z-index: -1;
@@ -205,6 +206,7 @@ body{
 }
 #dect{
     background: rgb(2, 15, 47);
+    border: .2px solid #39486f;
 }
 
 .skill-val{
@@ -229,6 +231,7 @@ body{
     color: white;
     text-align: center;
     transition: 0.2s ease-in-out;
+    box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
 }
 
 .edu-grid-item:hover{
@@ -418,4 +421,9 @@ body{
     left:180px;
     top: 1500px;
     z-index: -1;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    text-emphasis: none;
 }
