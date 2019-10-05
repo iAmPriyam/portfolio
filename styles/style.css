@@ -25,6 +25,22 @@ body{
     color: white;
 }
 
+
+.scroll-to-top{
+    display: none;
+height: 50px;
+width: 50px;
+background: rgba(252,0,127,1);
+position: fixed;
+bottom: 40px;
+right: 100px;
+text-align: center;
+color: white;
+border: none;
+font-size: 2rem;
+scroll-behavior: smooth;
+transition: 0.2s ease-in-out;
+}
 main{
     /* margin:0; */
     background: url("../images/bg-left-6cede81e395aa4ed5f64010cba3cd32b0cd8b29934de8a75b93c40dc9941fdd5.png"),url("../images/bg-right-e498161aecb6d9b04889329f11ce0b4e09e562ead23fb12d05b7508d1dc0c85c.png");
@@ -170,7 +186,7 @@ main{
 }
 
 .division{
-    margin-top: 140px;
+    margin: 180px 0;
 }
 
 .div-line,.div-line-short{
@@ -529,16 +545,17 @@ a{
     grid-template-columns: 100%;
 }
 .edu-grid-item{
-    background: linear-gradient( to bottom,rgb(255,181,62),  rgb(255,9,164));
-    background-attachment: fixed;
+    /* background: linear-gradient( to bottom,rgb(255,181,62),  rgb(255,9,164)); */
+    background: linear-gradient( to bottom,rgb(163,31,200),  rgb(255,9,164));;
+    background-attachment: local;
     /* background-size: cover; */
-    background-repeat: no-repeat;  
+    /* background-repeat: no-repeat;   */
     margin: 20px 0;
 }
 
 
 .skill-rating-val{
-    background: linear-gradient( to bottom,rgb(255,181,62),  rgb(255,9,164));
+    background: rgb(255,9,164);
     background-attachment: fixed;
     /* background-size: cover; */
     background-repeat: no-repeat; 
@@ -557,6 +574,7 @@ a{
     .hero-grid{
         grid-template-columns: 50% 50%; 
     }
+
 
 
     #about>p,.text{
@@ -592,7 +610,10 @@ a{
         border-radius: 100%;
     }
     
-    
+    .division{
+        margin: 80px 0;
+    }
+
     .mob-img-wrapper{
         position: relative;
         padding: 0.3rem;
@@ -669,6 +690,21 @@ a{
         /* background-size: cover; */
         background-repeat: no-repeat; 
     }
+
+
+.hero-grid-item{
+    height: 100px;
+    width : 120px;
+}
+.hero-grid-item>div{
+    margin-left: 22px;
+    font-size: 0.7rem;
+}
+
+.hero-grid-item>div>i{
+    margin: 16% 0;
+    font-size: 2.4rem;
+}
 }
 
 @media screen and (max-width:600px){
@@ -683,6 +719,11 @@ a{
         background-attachment: fixed;
         /* background-size: cover; */
         background-repeat: no-repeat; 
+    }
+
+    .scroll-to-top{
+        bottom:20px;
+        right: 20px;
     }
 
 }
@@ -723,19 +764,6 @@ a{
     }
 
 
-.hero-grid-item{
-    height: 100px;
-    width : 120px;
-}
-.hero-grid-item>div{
-    margin-left: 22px;
-    font-size: 0.7rem;
-}
-
-.hero-grid-item>div>i{
-    margin: 16% 0;
-    font-size: 2.4rem;
-}
 
 .edu-grid-item,.skill-rating-val{
     background-attachment: fixed;
