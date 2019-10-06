@@ -3,7 +3,9 @@
     font-family: Helmswald Post;
     src: url('../font/Helmswald Post.otf';)
 }
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin:  0;
@@ -27,19 +29,28 @@ body{
 
 
 .scroll-to-top{
+    outline: none;
     display: none;
-height: 50px;
-width: 50px;
-background: rgba(252,0,127,1);
-position: fixed;
-bottom: 40px;
-right: 100px;
-text-align: center;
-color: white;
-border: none;
-font-size: 2rem;
-scroll-behavior: smooth;
-transition: 0.2s ease-in-out;
+    height: 50px;
+    width: 50px;
+    background: rgba(252,0,127,1);
+    position: fixed;
+    bottom: 40px;
+    right: 100px;
+    text-align: center;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    scroll-behavior: smooth;
+    transition: 0.2s ease-in-out;
+    border-radius: 100%;
+    z-index: 100;
+    text-emphasis: none;
+}
+
+.scroll-to-top:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
 }
 main{
     /* margin:0; */
@@ -116,7 +127,7 @@ main{
 }
 
 #hero-col-left > p{
-    margin : 200px 0 0 0;
+    margin : 160px 0 0 0;
     color: rgb(255, 255, 255);
     font-size: 4rem;
 }
@@ -143,6 +154,7 @@ main{
 
 
 .hero-image-wrapper{
+    margin: 0 0 0 50px;
     position: relative;
     padding: 0.3rem;
     background: linear-gradient( 30deg, rgba(252,0,127,0), rgba(252,0,127,1), rgba(251,249,45,1));
@@ -155,7 +167,7 @@ main{
 }
 
 .hero-grid{
-    margin: 200px 180px;
+    margin: 50px 180px;
     display: grid;
     grid-template-columns: 250px 250px 250px;
     padding-top: 40px;
@@ -245,6 +257,13 @@ main{
     background-position: center;
     background-size: cover;
     display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+.skill-rating-val:hover{
+    transition: 0.2s ease-in-out;
+    border: 1px solid rgb(238, 137, 199);
+    transform: scale(1.4);
 }
 #dect{
     background: rgb(2, 15, 47);
@@ -271,13 +290,14 @@ main{
     background: linear-gradient( to right,rgb(255,181,62),  rgb(255,9,164));
     background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     /* background: pink; */
     color: white;
     text-align: center;
     transition: 0.2s ease-in-out;
     box-shadow: 0px 10px 20px rgb(0,0,0,0.2);
+    padding: 1rem 0rem;
 }
 
 .edu-grid-item:hover{
@@ -288,17 +308,17 @@ main{
 .edu-grid-item>h1{
     font-size: 1rem;
     text-transform: uppercase;
-    margin-top: 2rem;
 }
 .edu-grid-item>h2{
     font-size: 3rem;
     margin: 2rem 0;
 }
 .edu-grid-item>h3{
-    font-size: 1rem;
+    font-size: .8rem;
+    /* width: ; */
 }
 .edu-grid-item>h4{
-    font-size: .8rem;
+    font-size: .7rem;
 }
 
 
@@ -340,7 +360,7 @@ main{
 }
 
 .exp-header-left>span{
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 40px;
 }
 
 .exp-header-right{
@@ -396,7 +416,7 @@ main{
 }
 
 .project-card{
-    height: 200px;
+    height: auto;
     background: #1d2c4e;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
     padding: 20px;
@@ -425,7 +445,7 @@ main{
     margin-top:20px;
     color: #99a1b3;
     font-size: .8rem;
-    height: 80px;
+    height: auto;
     overflow: hidden;
 }
  .project-button{
@@ -438,6 +458,16 @@ main{
      transition: 0.2s ease-in-out; 
  }
 
+ #resume{
+    display: inline-block;
+    margin: auto;
+     align-self: center;
+     float: none;
+     height: auto;
+     width: auto;
+     padding: .2rem 1rem;
+ }
+
  .project-button:hover{
     background: rgba(148,234,255,1);
     color: rgb(57,72,111);
@@ -446,6 +476,9 @@ main{
  }
 
  footer{
+     padding: 100px 0;
+     text-align: center;
+     width: 100%;
      background-image: url("../images/bg-left2-5c6239cfdeee85bd4e1299b1568bfe266cf8f3db605ccfa26f2e3d9e7a31fc2d.png"),url("../images/bg-right2-c33fdd65e6a4c81287cb0f463cd75e24b6bf861a40c16207813f344e9b7def98.png");
      background-origin: content-box;
      background-repeat:no-repeat;
@@ -453,19 +486,7 @@ main{
      overflow: hidden;
      /* background-color: pink; */
  }
- .footer-wall-left{
-     position: absolute;
-     left:0;
-     top: 8000px;
-     z-index: -1;
- }
-
- .footer-wall-right{
-    position: absolute;
-    right:0;
-    top: 7800px;
-    z-index: -1;
-}
+ 
 
 #about{
     background: url("../images/bg-map-6ed3e6c4b0c66b7bc311899f6257b04ccedb52dc69e65abdafecf2a8ec472fa5.png");
@@ -633,6 +654,10 @@ a{
         display: block;
         margin: 5px 0px;
         font-size: 2rem;
+    }
+    #resume{
+        width: 100%;
+        padding: 0;
     }
 
     #hero{
