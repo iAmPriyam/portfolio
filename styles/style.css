@@ -1,6 +1,6 @@
 @font-face {
     font-family: Helmswald Post;
-    src: url("../font/Helmswald Post.otf";);
+    src: url("../font/Helmswald Post.otf");
 }
 html {
     scroll-behavior: smooth;
@@ -443,6 +443,7 @@ main {
     background-size: cover;
     background-blend-mode: overlay;
     -webkit-filter: grayscale(0.4);
+    filter: grayscale(0.4);
 }
 /* 
 #chat:hover {
